@@ -1,6 +1,5 @@
 import { useTheme } from "@/context/theme-provider";
 import { Moon, Sun } from "lucide-react";
-import React from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -25,9 +24,9 @@ const Header = () => {
             }`}
             onClick={() => setTheme(isDark ? "light" : "dark")}>
             {isDark ? (
-              <Sun className="h-6 w-6 rotate-0 transition-all text-yellow-500" />
+              <Sun className="h-6 w-6 rotate-0 transition-all" />
             ) : (
-              <Moon className="h-6 w-6 text-blue-500 rotate-0 transition-all" />
+              <Moon className="h-6 w-6 text-blue-950 rotate-0 transition-all" />
             )}
           </div>
         </div>
